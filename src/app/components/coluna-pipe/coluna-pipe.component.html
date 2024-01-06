@@ -1,0 +1,12 @@
+<section class="container">
+  <div class="header">
+    <div class="info">
+      <h1>{{titleName}}</h1>
+      <span> 2 - R$6.800,00 </span>
+    </div>
+  </div>
+
+  <div class="cards">
+    <app-card *ngFor="let item of dados" [dataCard]="item"/>
+  </div>
+</section>
