@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
-import { ColunaPipeComponent } from '../../components/coluna-pipe/coluna-pipe.component';
 import { CommonModule } from '@angular/common';
+
+// Components
+import { ColunaPipeComponent } from '../../components/coluna-pipe/coluna-pipe.component';
+import { HeaderPipeComponent } from '../../components/header-pipe/header-pipe.component';
 
 @Component({
   selector: 'app-pipeline',
   standalone: true,
-  imports: [CommonModule, ColunaPipeComponent],
+  imports: [CommonModule, ColunaPipeComponent, HeaderPipeComponent],
   templateUrl: './pipeline.component.html',
   styleUrl: './pipeline.component.scss'
 })
@@ -15,7 +18,7 @@ export class PipelineComponent {
   public data = [
     {
       id: 1,
-      title: 'Mercadooo',
+      title: 'Perfil Sem Contato',
       dados: [
         {
           id: 1,
@@ -50,7 +53,7 @@ export class PipelineComponent {
       ]
     },{
       id: 1,
-      title: 'Apresentado',
+      title: 'Apresentação Realizada',
       dados: [
         {
           id: 4,
@@ -67,7 +70,7 @@ export class PipelineComponent {
       ]
     },{
       id: 1,
-      title: 'Amostra',
+      title: 'Amostra Enviada',
       dados: [
         {
           id: 3,
@@ -90,7 +93,7 @@ export class PipelineComponent {
       ]
     },{
       id: 1,
-      title: 'Padronizado',
+      title: 'Produto Padronizado',
       dados: [
         {
           id: 4,
@@ -107,7 +110,7 @@ export class PipelineComponent {
       ]
     },{
       id: 1,
-      title: 'Em negociação',
+      title: 'Em Negociação',
       dados: [
         {
           id: 2,
@@ -135,7 +138,7 @@ export class PipelineComponent {
       ]
     },{
       id: 1,
-      title: 'Faturado',
+      title: 'Ultimos Faturamentos',
       dados: [
         {
           id: 5,

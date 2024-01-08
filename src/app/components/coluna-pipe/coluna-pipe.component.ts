@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { CardComponent } from '../card/card.component';
+import { CardComponent } from '../card-pipe/card.component';
 import { CommonModule } from '@angular/common';
 
 @Component({

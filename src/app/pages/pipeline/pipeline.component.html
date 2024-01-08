@@ -1,4 +1,5 @@
-<div>
+<div class="container">
+  <app-header-pipe/>
   <div class="colunas">
     <app-coluna-pipe *ngFor="let item of data" [dados]="item.dados" [titleName]="item.title"/>
   </div>
